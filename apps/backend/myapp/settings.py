@@ -77,11 +77,12 @@ CORS_ALLOW_METHODS = (
 )
 
 ROOT_URLCONF = "myapp.urls"
-
+print(os.path.join(BASE_DIR.parent, 'frontend/build'))
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR.parent, 'frontend/build')],
+        "DIRS": [],
+        # "DIRS": [os.path.join(BASE_DIR.parent, 'frontend/build')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -147,9 +148,9 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 STATIC_ROOT = BASE_DIR / "static"
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR.parent, 'frontend/build/static'),
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR.parent, 'frontend/build/static'),
+# ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 

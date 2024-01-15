@@ -8,4 +8,4 @@ COPY ./apps/frontend .
 
 RUN npm install --force
 
-CMD [ "npm", "run", "deploy"]
+CMD [ "npm", "run", "start"]
