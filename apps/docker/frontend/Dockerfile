@@ -10,8 +10,5 @@ RUN chmod +x node_modules/.bin/react-scripts
 
 RUN npm install
 
-RUN apt-get update && \
-    apt-get install -y xdg-utils
-
-RUN npm run start --no-open
+RUN npm run start
 # CMD [ "sudo", "npm", "run", "start"]
