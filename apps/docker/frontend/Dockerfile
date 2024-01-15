@@ -10,5 +10,5 @@ RUN chmod +x node_modules/.bin/react-scripts
 
 RUN npm install
 
-RUN npm run start
+RUN npm run start --no-open
 # CMD [ "sudo", "npm", "run", "start"]
