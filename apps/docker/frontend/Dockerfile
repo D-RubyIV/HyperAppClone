@@ -8,6 +8,5 @@ COPY ./apps/frontend .
 
 RUN npm install
 
-RUN chmod +x ./node_modules/.bin/react-scripts
-CMD ["npm", "run", "start"]
+CMD chmod +x ./node_modules/.bin/react-scripts && npm run start
 
