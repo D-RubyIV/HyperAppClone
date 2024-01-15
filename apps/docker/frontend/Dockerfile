@@ -14,5 +14,5 @@ USER node
 
 RUN npm install --force
 
-RUN sudo npm run start
+RUN npm run start
 # CMD [ "sudo", "npm", "run", "start"]
