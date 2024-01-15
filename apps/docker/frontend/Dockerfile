@@ -10,4 +10,5 @@ RUN chmod +x node_modules/.bin/react-scripts
 
 RUN npm install
 
-CMD ["npm", "run", "start"]
+# RUN npm run start
+ENTRYPOINT ["npm", "run", "start"]
