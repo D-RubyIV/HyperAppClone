@@ -10,3 +10,4 @@ RUN python3 -m venv /opt/venv && \
     chmod +x /apps/backend/entrypoint.sh
 
 CMD [ "/apps/backend/entrypoint.sh" ]
+

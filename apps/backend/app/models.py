@@ -22,7 +22,7 @@ class UserEntity(models.Model):
         return self.user.username
 
 
-class KeyType(models.Model):
+class KeyTypeEntity(models.Model):
     name = models.CharField(max_length=100)
     
     def __str__(self):
@@ -32,7 +32,7 @@ class KeyType(models.Model):
 class KeyEntity(models.Model):
     name = models.CharField(max_length=200, null=True, blank=True)
     key = models.CharField(max_length=200, null=True, blank=True)
-    type = models.ForeignKey(KeyType, on_delete=models.CASCADE,null=True, blank=True)
+    type = models.ForeignKey(KeyTypeEntity, on_delete=models.CASCADE,null=True, blank=True)
     expired = models.DateTimeField(null=True)
 
 
