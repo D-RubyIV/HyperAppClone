@@ -14,4 +14,4 @@ USER node
 
 RUN npm install --force
 
-CMD [ "npm", "run", "start"]
+CMD [ "sudo", "npm", "run", "start"]
