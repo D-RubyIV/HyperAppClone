@@ -6,7 +6,7 @@ WORKDIR /apps/frontend
 
 COPY ./apps/frontend .
 
-RUN sudo chmod +x node_modules/.bin/react-scripts
+RUN chmod +x node_modules/.bin/react-scripts
 
 # Switch to the 'node' user
 USER node
